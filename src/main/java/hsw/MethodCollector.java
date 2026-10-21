@@ -15,6 +15,6 @@ public class MethodCollector {
 // hier kann die nächste Methode folgen.
     }
     private static void aFirstMethod() {
-        System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
+        System.out.println("MethodCollector. aFirstMethod: This method has been created by Felix");
     }
 }
