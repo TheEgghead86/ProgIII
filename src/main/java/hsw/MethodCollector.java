@@ -1,4 +1,7 @@
 package hsw;
+
+import static java.lang.Thread.sleep;
+
 public class MethodCollector {
     /**
      * Die main-Methode ruft alle statischen
@@ -12,15 +15,15 @@ public class MethodCollector {
         aFirstMethod();
         methodCounter++;
 
-        System.out.println("Method " + methodCounter
-                + ":" );
-        aSecondMethod();
+
     }
     private static void aFirstMethod() {
-        System.out.println("MethodCollector. aFirstMethod: This method has been created.");
+        System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
     }
 
-    private static void aSecondMethod() {
-        System.out.println("MethodCollector. aSecondMethod: This method has been created.");
+    private static void sleepMethod() {
+        try{
+            sleep(10);
+        } catch (InterruptedException e) {}
     }
 }
