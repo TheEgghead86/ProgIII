@@ -17,6 +17,9 @@ public class MethodCollector {
         aFirstMethod();
         dieseEineMethode();
         methodCounter++;
+// nächsteMethode
+        neueMethode n =  new neueMethode();
+        n.test();
         bHallo();
         methodCounter++;
         dHallo();
