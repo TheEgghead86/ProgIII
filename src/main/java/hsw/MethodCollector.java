@@ -13,8 +13,13 @@ public class MethodCollector {
         aFirstMethod();
         methodCounter++;
 // hier kann die nächste Methode folgen.
+        hupen();
     }
     private static void aFirstMethod() {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
+    }
+
+    private static void hupen() {
+        System.out.println("meep meep");
     }
 }
