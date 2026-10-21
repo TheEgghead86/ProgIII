@@ -1,4 +1,7 @@
 package hsw;
+
+import static hsw.Methoden.eineWunderSchoeneKlasseNamensMaja.executeMaja;
+
 public class MethodCollector {
     /**
      * Die main-Methode ruft alle statischen
@@ -15,6 +18,8 @@ public class MethodCollector {
         bHallo();
         methodCounter++;
 // hier kann die nächste Methode folgen.
+        executeMaja();
+        methodCounter++;
 
         System.out.println("Method " + methodCounter + ": " + anotherMethodMarlon());
         methodCounter++;
