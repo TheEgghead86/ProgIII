@@ -20,6 +20,8 @@ public class MethodCollector {
         dHallo();
         methodCounter++;
 // hier kann die nächste Methode folgen.
+        System.out.println("Method " + methodCounter + ":");
+        sleepyMethod();
         executeMaja();
         methodCounter++;
 
@@ -28,6 +30,10 @@ public class MethodCollector {
     }
     private static void aFirstMethod() {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
+    }
+
+    private static void sleepyMethod() {
+        System.out.println("MethodCollector. Taking a nap...");
     }
 
     private static void bHallo(){
