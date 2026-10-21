@@ -12,6 +12,7 @@ public class MethodCollector {
                 + ":" );
         aFirstMethod();
         methodCounter++;
+        bHallo();
 // hier kann die nächste Methode folgen.
         hupen();
     }
@@ -21,5 +22,8 @@ public class MethodCollector {
 
     private static void hupen() {
         System.out.println("meep meep");
+    }
+    private static void bHallo(){
+        System.out.println("Hallo! Jeronimo. ");
     }
 }
