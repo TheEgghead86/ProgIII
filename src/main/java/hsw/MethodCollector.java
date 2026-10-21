@@ -13,6 +13,7 @@ public class MethodCollector {
         aFirstMethod();
         methodCounter++;
         bHallo();
+        dHallo();
 // hier kann die nächste Methode folgen.
     }
     private static void aFirstMethod() {
@@ -22,4 +23,9 @@ public class MethodCollector {
     private static void bHallo(){
         System.out.println("Hallo! Jeronimo. ");
     }
+
+    private static void dHallo(){
+        System.out.println("Hallo! Danielos. ");
+    }
 }
+
