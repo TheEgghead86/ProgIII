@@ -27,6 +27,13 @@ public class MethodCollector {
 
         System.out.println("Method " + methodCounter + ": " + anotherMethodMarlon());
         methodCounter++;
+
+        JonnysClass jc = new JonnysClass();
+        try {
+            jc.winkendeHand();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     private static void aFirstMethod() {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
