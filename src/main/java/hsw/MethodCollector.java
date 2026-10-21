@@ -17,4 +17,8 @@ public class MethodCollector {
     private static void aFirstMethod() {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
     }
+
+    private static void aNewMethod() {
+        System.out.println("Neue Methode");
+    }
 }
