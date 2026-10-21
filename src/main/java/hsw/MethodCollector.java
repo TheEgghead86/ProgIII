@@ -1,6 +1,7 @@
 package hsw;
 
 import java.util.Arrays;
+import static hsw.Methoden.eineWunderSchoeneKlasseNamensMaja.executeMaja;
 
 public class MethodCollector {
     /**
@@ -16,7 +17,16 @@ public class MethodCollector {
         aFirstMethod();
         dieseEineMethode();
         methodCounter++;
+        bHallo();
+        dHallo();
 // hier kann die nächste Methode folgen.
+
+        JonnysClass jc = new JonnysClass();
+        try {
+            jc.winkendeHand();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     private static void aFirstMethod() {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
@@ -25,5 +35,16 @@ public class MethodCollector {
     private static void dieseEineMethode(){
         String text = "Freitag Online";
         System.out.println("Bitte " + Arrays.hashCode(text.toCharArray()));
+    private static void sleepyMethod() {
+        System.out.println("MethodCollector. Taking a nap...");
+    }
+
+    private static void bHallo(){
+        System.out.println("Hallo! Jeronimo. ");
+    }
+
+    private static void dHallo(){
+        System.out.println("Hallo! Danielos. ");
     }
 }
+
