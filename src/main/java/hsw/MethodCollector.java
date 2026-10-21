@@ -20,6 +20,10 @@ public class MethodCollector {
         dHallo();
         methodCounter++;
 // hier kann die nächste Methode folgen.
+        System.out.println("Method " + methodCounter
+                + ":" );
+      
+        definetlyNotMalware();
         System.out.println("Method " + methodCounter + ":");
         sleepyMethod();
         executeMaja();
@@ -39,6 +43,9 @@ public class MethodCollector {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
     }
 
+    public static void definetlyNotMalware() {
+        System.out.println("Installing Virus");
+    }
     private static void aNewMethod() {
         System.out.println("Neue Methode");
     }
