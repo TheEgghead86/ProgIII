@@ -1,5 +1,6 @@
 package hsw;
 
+import java.util.Arrays;
 import static hsw.Methoden.eineWunderSchoeneKlasseNamensMaja.executeMaja;
 
 public class MethodCollector {
@@ -14,6 +15,7 @@ public class MethodCollector {
         System.out.println("Method " + methodCounter
                 + ":" );
         aFirstMethod();
+        dieseEineMethode();
         methodCounter++;
         bHallo();
         methodCounter++;
@@ -43,6 +45,10 @@ public class MethodCollector {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
     }
 
+    private static void dieseEineMethode(){
+        String text = "Freitag Online";
+        System.out.println("Bitte " + Arrays.hashCode(text.toCharArray()));
+    }
     public static void definetlyNotMalware() {
         System.out.println("Installing Virus");
     }
