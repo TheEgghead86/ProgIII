@@ -18,8 +18,21 @@ public class MethodCollector {
         dieseEineMethode();
         methodCounter++;
         bHallo();
+        methodCounter++;
         dHallo();
+        methodCounter++;
 // hier kann die nächste Methode folgen.
+        System.out.println("Method " + methodCounter
+                + ":" );
+      
+        definetlyNotMalware();
+        System.out.println("Method " + methodCounter + ":");
+        sleepyMethod();
+        executeMaja();
+        methodCounter++;
+
+        System.out.println("Method " + methodCounter + ": " + anotherMethodMarlon());
+        methodCounter++;
 
         JonnysClass jc = new JonnysClass();
         try {
@@ -35,12 +48,23 @@ public class MethodCollector {
     private static void dieseEineMethode(){
         String text = "Freitag Online";
         System.out.println("Bitte " + Arrays.hashCode(text.toCharArray()));
+    }
+    public static void definetlyNotMalware() {
+        System.out.println("Installing Virus");
+    }
+    private static void aNewMethod() {
+        System.out.println("Neue Methode");
+    }
     private static void sleepyMethod() {
         System.out.println("MethodCollector. Taking a nap...");
     }
 
     private static void bHallo(){
         System.out.println("Hallo! Jeronimo. ");
+    }
+
+    private static String anotherMethodMarlon() {
+        return "MethodCollector.anotherMethodMarlon: Method created by Marlon";
     }
 
     private static void dHallo(){
