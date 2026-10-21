@@ -12,6 +12,8 @@ public class MethodCollector {
                 + ":" );
         aFirstMethod();
         methodCounter++;
+        bHallo();
+        methodCounter++;
 // hier kann die nächste Methode folgen.
 
         System.out.println("Method " + methodCounter + ": " + anotherMethodMarlon());
@@ -19,6 +21,10 @@ public class MethodCollector {
     }
     private static void aFirstMethod() {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
+    }
+
+    private static void bHallo(){
+        System.out.println("Hallo! Jeronimo. ");
     }
 
     private static String anotherMethodMarlon() {
