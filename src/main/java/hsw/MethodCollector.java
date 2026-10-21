@@ -27,6 +27,7 @@ public class MethodCollector {
         dHallo();
         methodCounter++;
 // hier kann die nächste Methode folgen.
+        hupen();
         System.out.println("Method " + methodCounter
                 + ":" );
       
