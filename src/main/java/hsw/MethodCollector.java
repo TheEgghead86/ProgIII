@@ -1,5 +1,6 @@
 package hsw;
 
+import static java.lang.Thread.sleep;
 import java.util.Arrays;
 import static hsw.Methoden.eineWunderSchoeneKlasseNamensMaja.executeMaja;
 
@@ -11,12 +12,13 @@ public class MethodCollector {
      */
     public static void main(String[] args) {
         int methodCounter = 1;
-// Erste Methode
         System.out.println("Method " + methodCounter
                 + ":" );
         aFirstMethod();
         dieseEineMethode();
         methodCounter++;
+
+
 // nächsteMethode
         neueMethode n =  new neueMethode();
         n.test();
@@ -48,6 +50,12 @@ public class MethodCollector {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
     }
 
+    private static void sleepMethod() {
+        try{
+            sleep(10);
+        } catch (InterruptedException e) {}
+    }
+      
     private static void dieseEineMethode(){
         String text = "Freitag Online";
         System.out.println("Bitte " + Arrays.hashCode(text.toCharArray()));
