@@ -1,4 +1,7 @@
 package hsw;
+
+import static hsw.Methoden.eineWunderSchoeneKlasseNamensMaja.executeMaja;
+
 public class MethodCollector {
     /**
      * Die main-Methode ruft alle statischen
@@ -12,6 +15,8 @@ public class MethodCollector {
                 + ":" );
         aFirstMethod();
         methodCounter++;
+        bHallo();
+        dHallo();
 // hier kann die nächste Methode folgen.
 
         JonnysClass jc = new JonnysClass();
@@ -24,4 +29,17 @@ public class MethodCollector {
     private static void aFirstMethod() {
         System.out.println("MethodCollector. aFirstMethod: This method has been created by ");
     }
+
+    private static void sleepyMethod() {
+        System.out.println("MethodCollector. Taking a nap...");
+    }
+
+    private static void bHallo(){
+        System.out.println("Hallo! Jeronimo. ");
+    }
+
+    private static void dHallo(){
+        System.out.println("Hallo! Danielos. ");
+    }
 }
+
